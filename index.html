@@ -5,6 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World TZ🌍⏱</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.41/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <h1>World Clock Project</h1>
+    <form>
+      <select name="countries" id="countries">
+        <option value="">Select a country</option>
+        <option value="brazil">Brazil ⛱</option>
+        <option value="england">England🌂</option>
+        <option value="germany">Germany🥨</option>
+      </select>
+    </form>
+
+    <script>
+      function alertTime(event) {
+        if (event.target.value === "brazil") {
+          alert(`It is ${brazilTime} in America/São Paulo`);
+        }
+        if (event.target.value === "england") {
+          alert(`It is ${englandTime} in Europe/London`);
+        }
+        if (event.target.value === "germany") {
+          alert(`It is ${germanyTime} in Europe/Berlin`);
+        }
+      }
+
+      let brazilTime = moment()
+        .tz("America/Sao_Paulo")
+        .format("dddd, MMMM D, YYYY hh:mm A");
+
+      let englandTime = moment()
+        .tz("Europe/London")
+        .format("dddd, MMMM D, YYYY hh:mm A");
+
+      let germanyTime = moment()
+        .tz("Europe/Berlin")
+        .format("dddd, MMMM D, YYYY hh:mm A");
+
+      let selectElement = document.querySelector("#countries");
+      selectElement.addEventListener("change", alertTime);
+    </script>
+  </body>
 </html>
