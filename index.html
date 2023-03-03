@@ -7,6 +7,7 @@
     <title>World TZ🌍⏱</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.41/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <h1>World Clock Project</h1>
@@ -19,18 +20,6 @@
       </select>
     </form>
 
-    <script>
-      function alertTime(event) {
-        if (event.target.value.length > 0) {
-          alert(
-            `It is ${moment()
-              .tz(event.target.value)
-              .format("dddd, MMMM D, YYYY hh:mm A")} in ${event.target.value}`
-          );
-        }
-      }
-      let selectElement = document.querySelector("#countries");
-      selectElement.addEventListener("change", alertTime);
-    </script>
+    <script src="src/app.js"></script>
   </body>
 </html>
