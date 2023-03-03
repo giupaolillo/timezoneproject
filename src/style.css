@@ -1,0 +1,33 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+}
+
+h1,
+form,
+footer {
+  text-align: center;
+}
+
+select {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background-color: antiquewhite;
+  padding: 31px;
+  margin: 50px 140px;
+}
