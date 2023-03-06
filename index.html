@@ -16,27 +16,42 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>World Clock Project</h1>
-    <form>
-      <select name="countries" id="countries">
-        <option value="">Select a country</option>
-        <option value="America/Sao_Paulo">São Paulo 🏦</option>
-        <option value="Europe/London">London ☂</option>
-        <option value="Europe/Berlin">Berlin 🥨</option>
-      </select>
-
-      <footer>
-        Coded with 🖤 by
-        <a href="https://giupaolillo.netlify.app/" target="_blank"
-          >Giulia Paolillo</a
-        >
-        and is
-        <a href="https://github.com/giupaolillo/timezoneproject" target="_blank"
-          >open-sourced on GitHub</a
-        >.
-      </footer>
-    </form>
-
+    <div class="container">
+      <h1>World Clock Project</h1>
+      <form>
+        <select name="countries" id="countries">
+          <option value="">Select a country</option>
+          <option value="America/Sao_Paulo">São Paulo 🏦</option>
+          <option value="Europe/London">London ☂</option>
+          <option value="Europe/Berlin">Berlin 🥨</option>
+        </select>
+      </form>
+      <div class="cities">
+        <h2>Brasilia</h2>
+        <div class="date">Monday, March 6th 2023</div>
+        <div class="time">11:29</div>
+      </div>
+      <div class="cities">
+        <h2>New York</h2>
+        <div class="date">Monday, March 6th 2023</div>
+        <div class="time">11:29</div>
+      </div>
+      <div class="cities">
+        <h2>Beijing</h2>
+        <div class="date">Monday, March 6th 2023</div>
+        <div class="time">11:29</div>
+      </div>
+    </div>
+    <footer>
+      Coded with 🖤 by
+      <a href="https://giupaolillo.netlify.app/" target="_blank">
+        Giulia Paolillo
+      </a>
+      and is
+      <a href="https://github.com/giupaolillo/timezoneproject" target="_blank">
+        open-sourced on GitHub</a
+      >.
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
