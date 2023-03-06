@@ -1,11 +1,29 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  background-color: #ffb84c;
+  background: repeating-linear-gradient(
+    45deg,
+    #a459d1,
+    #a459d1 5px,
+    #ffb84c 5px,
+    #ffb84c 25px
+  );
+  background-size: cover;
 }
 
 h1 {
   font-family: "Abril Fatface", cursive;
   letter-spacing: 1px;
+  color: black;
+  font-size: 52px;
+  opacity: 0.68;
+  margin-top: 0;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
 }
 
 h1,
@@ -14,20 +32,81 @@ footer {
   text-align: center;
 }
 
+form {
+  margin: 0;
+  max-width: 100%;
+}
+
 select {
-  padding: 10px;
+  padding: 10px 163px;
+  margin: 0 auto;
+  text-align: left;
+  display: block;
   font-size: 17px;
-  border: 1px black solid;
+  border: 1px rgba(164, 89, 209, 0.68) solid;
   border-radius: 5px;
+  max-width: 100%;
+  color: rgb(164, 89, 209);
+  background: #f5eaea;
 }
 
 a {
   font-weight: bold;
   text-decoration: none;
+  color: #a459d1;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  color: #f16767;
+}
+
+.container {
+  margin: 60px auto 0;
+  padding: 157px 136px;
+  background: #f5eaea;
+  max-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cities {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  margin: 47px 17px;
+  border-bottom: 1px dashed rgba(164, 89, 209, 0.3);
+}
+
+.cities:last-child {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.time {
+  align-self: center;
+  font-size: 60px;
+  color: #a459d1;
+}
+
+.data,
+.calendar {
+  opacity: 0.6;
+}
+
+.container,
+footer {
+  border-radius: 10px;
 }
 
 footer {
-  background-color: antiquewhite;
-  padding: 31px;
-  margin: 50px 140px;
+  margin: 36px auto 114px;
+  padding: 12px 136px;
+  background: #f5eaea;
+  max-width: 500px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px,
+    rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px,
+    rgb(0 0 0 / 9%) 0px -3px 5px;
 }
