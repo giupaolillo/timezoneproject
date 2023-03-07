@@ -93,6 +93,7 @@ a:hover {
   align-self: center;
   font-size: 60px;
   color: #a459d1;
+  font-variant-numeric: tabular-nums;
 }
 
 .time span {
