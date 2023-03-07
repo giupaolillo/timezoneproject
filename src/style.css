@@ -95,7 +95,7 @@ a:hover {
   color: #a459d1;
 }
 
-.time .amPM {
+.time span {
   font-size: 30px;
   vertical-align: middle;
 }

@@ -9,3 +9,19 @@
 }
 let selectElement = document.querySelector("#countries");
 selectElement.addEventListener("change", alertTime); */
+
+function updateTime() {
+  let date = document.querySelector("#brasilia .date");
+  date.innerHTML = moment()
+    .tz("America/Sao_Paulo")
+    .format("dddd, MMMM Do YYYY");
+
+  let time = document.querySelector("#brasilia .time");
+  time.innerHTML = moment()
+    .tz("America/Sao_Paulo")
+    .format("hh:mm:ss:SS [<span>]a[</span>]");
+
+  //11:29:01:00 <span class="amPM">am</span>
+}
+
+updateTime();
