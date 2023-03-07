@@ -1,4 +1,4 @@
-function alertTime(event) {
+/* function alertTime(event) {
   if (event.target.value.length > 0) {
     alert(
       `It is ${moment()
@@ -8,4 +8,4 @@ function alertTime(event) {
   }
 }
 let selectElement = document.querySelector("#countries");
-selectElement.addEventListener("change", alertTime);
+selectElement.addEventListener("change", alertTime); */
