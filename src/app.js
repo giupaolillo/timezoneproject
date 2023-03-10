@@ -8,7 +8,7 @@ function updateTime() {
 
     let currentTimeSaoPaulo = moment()
       .tz("America/Sao_Paulo")
-      .format("hh:mm:ss [<span>]a[</span>]");
+      .format("h:mm:ss [<span>]a[</span>]");
 
     let timeSaoPauloElement = document.querySelector("#sao_paulo .time");
 
@@ -16,20 +16,20 @@ function updateTime() {
     timeSaoPauloElement.innerHTML = currentTimeSaoPaulo;
   }
 
-  let dateNYElement = document.querySelector("#new-york .date");
+  let dateJohannesburgElement = document.querySelector("#johannesburg .date");
 
-  if (dateNYElement) {
-    let currentDateNewYork = moment()
-      .tz("America/New_York")
+  if (dateJohannesburgElement) {
+    let currentDateJohannesburg = moment()
+      .tz("Africa/Johannesburg")
       .format("dddd, MMMM Do YYYY");
 
-    let timeNewYorkElement = document.querySelector("#new-york .time");
-    let currentTimeNewYork = moment()
-      .tz("America/New_York")
-      .format("hh:mm:ss [<span>]a[</span>]");
+    let timeJohannesburgElement = document.querySelector("#johannesburg .time");
+    let currentTimeJohannesburg = moment()
+      .tz("Africa/Johannesburg")
+      .format("h:mm:ss [<span>]a[</span>]");
 
-    timeNewYorkElement.innerHTML = currentTimeNewYork;
-    dateNYElement.innerHTML = currentDateNewYork;
+    timeJohannesburgElement.innerHTML = currentTimeJohannesburg;
+    dateJohannesburgElement.innerHTML = currentDateJohannesburg;
   }
 
   let dateShanghaiElement = document.querySelector("#shanghai .date");
@@ -41,7 +41,7 @@ function updateTime() {
     let timeShanghaiElement = document.querySelector("#shanghai .time");
     let currentTimeShanghai = moment()
       .tz("Asia/Shanghai")
-      .format("hh:mm:ss [<span>]a[</span>]");
+      .format("h:mm:ss [<span>]a[</span>]");
 
     dateShanghaiElement.innerHTML = currentDateShanghai;
     timeShanghaiElement.innerHTML = currentTimeShanghai;
@@ -70,10 +70,11 @@ function newTimeZoneEntry(event) {
           </div>
           <div class="time">${moment()
             .tz(timeZone)
-            .format("hh:mm:ss")} <span>${moment()
+            .format("h:mm:ss")} <span>${moment()
         .tz(timeZone)
         .format("a")}</span></div>
-        </div>`;
+        </div>
+        <a href="/">Back to Main</a>`;
     }
   }, 1000);
 }
