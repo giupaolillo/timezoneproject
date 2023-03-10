@@ -52,6 +52,9 @@ function newTimeZoneEntry(event) {
   setInterval(function () {
     if (event.target.value.length > 0) {
       let timeZone = event.target.value;
+      if (timeZone === "current") {
+        timeZone = moment.tz.guess();
+      }
       let formattedTimeZone = timeZone
         .replace("_", " ")
         .replace("Sao", "São")
